@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="g.css">
+</head>
+<body>
+    <div class="gallery-wrap">
+        <img src="img/img8.png" id="bbtn">
+        <div class="gallery">
+            <div>
+                <span><img src="img/img1.jpg"></span>
+                <span><img src="img/img2.jpg"></span>
+                <span><img src="img/img4.jpg"></span>
+            </div>
+            <div>
+                <span><img src="img/img1.jpg"></span>
+                <span><img src="img/img2.jpg"></span>
+                <span><img src="img/img4.jpg"></span>
+            </div>
+        </div>
+        <img src="img/img7.png" id="nbtn">
+    </div>
+
+    <script>
+
+        let scrollContainer = document.querySelector(".gallery");
+
+        let bbtn = document.getElementById("bbtn");
+        let nbtn = document.getElementById("nbtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        nbtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 900;
+        });
+
+        bbtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 900;
+        });
+
+    </script>
+</body>
+</html>
