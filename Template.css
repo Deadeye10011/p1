@@ -1,0 +1,238 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+body {
+  background: #081b29;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+  }
+
+  .text-container {
+    float: left;
+    color: aliceblue;
+    width: 40%; /* Adjust the width of the text container as needed */
+  }
+
+  .text-container h2{
+    text-align: center;
+  }
+
+  .text-container_2 h2{
+    text-align: center;
+  }
+
+  .text-container p{
+    margin: 15px 0px 0px 20px ;
+  }
+
+  .text-container_2 p{
+    margin: 15px 0px 0px 20px ;
+  }
+
+  .text-container_2 {
+    float: right;
+    color: aliceblue;
+    width: 40%; /* Adjust the width of the text container as needed */
+  }
+
+  .text-container a{
+    position: absolute;
+    bottom: 50px;
+    width: 38%;
+  }
+
+  .text-container_2 a{
+    position: absolute;
+    bottom: 50px;
+    width: 38%;
+  }
+
+  .image-container {
+    float: right;
+    width: 50%; /* Adjust the width of the image container as needed */
+    height: 300px; /* Set a fixed height for the image container */
+    margin-left: 20px;
+    overflow: hidden;
+  }
+
+  .image-container_2 {
+    float: left;
+    width: 50%; /* Adjust the width of the image container as needed */
+    height: 300px; /* Set a fixed height for the image container */
+    margin-left: 20px;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5%;
+  }
+
+  .image-container_2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5%;
+  }
+
+  .download-button {
+    clear: both;
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+
+
+
+  .header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #088178;
+
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration:whitesmoke;
+    font-weight: 600;
+}
+
+
+.navbar a {
+
+    font-size: 18px;
+    color: white;
+    text-decoration:dashed;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #088178;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  color:rgb(127, 193, 255);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: -30px;
+  margin-left: 20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #088178;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-left: -5px;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color:rgb(127, 193, 255);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+.navbar a:hover,
+.navbar a.active {
+
+  color:rgb(127, 193, 255);
+}
+
+
+#footer {
+  background-color: black;
+ }
+ 
+ .footerBottom {
+     background-color: #000;
+     text-align: center;
+     color: white;
+     height: 50px;
+     padding-top: 15px;
+ }
+ 
+ .icons {
+     text-align: center;
+     height: 40px;
+     padding-top: 10px;
+ }
+ 
+ .icons a{
+     padding: 10px;
+     margin: 10px;
+     background-color:aliceblue;
+     border-radius: 50%;
+ }
+ 
+ .contacts{
+     text-align: center;
+     color: white;
+     padding-top: 10px;
+ }
+ 
+ .footerContainer{
+     background-color: #000;
+     padding: 20px;
+ }
